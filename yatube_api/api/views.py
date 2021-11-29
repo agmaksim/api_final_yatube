@@ -27,7 +27,7 @@ class PostViewSet(viewsets.ModelViewSet):
     serializer_class = PostSerializer
     permission_classes = (
         AuthorPermissionReadOnlyAll,
-        )
+    )
     pagination_class = LimitOffsetPagination
 
     def perform_create(self, serializer):
@@ -39,7 +39,7 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = GroupSerializer
     permission_classes = (
         permissions.AllowAny,
-        )
+    )
 
 
 class FollowViewSet(CreateList):
