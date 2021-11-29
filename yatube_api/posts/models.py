@@ -1,11 +1,7 @@
 from django.contrib.auth import get_user_model
-from django.contrib.auth.models import UserManager
 from django.db import models
-from django.db.models import constraints
-from django.db.models.deletion import CASCADE
 
 User = get_user_model()
-
 
 
 class Group(models.Model):
